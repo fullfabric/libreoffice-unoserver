@@ -1,4 +1,4 @@
-ARG ALPINE_VERSION
+ARG ALPINE_VERSION=latest
 ARG S6_VERSION=v3.2.1.0
 
 FROM socheatsok78/s6-overlay:${S6_VERSION} AS s6-overlay
