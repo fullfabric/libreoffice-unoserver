@@ -1,14 +1,16 @@
 name: Release
 
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - v2
+# Disable
+# on:
+#   workflow_dispatch:
+#   push:
+#     branches:
+#       - v2
 
-  # Build daily on 00:00 UTC
-  schedule:
-    - cron: '0 0 * * SUN'
+#   # Build daily on 00:00 UTC
+#   schedule:
+#     - cron: '0 0 * * SUN'
+
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
